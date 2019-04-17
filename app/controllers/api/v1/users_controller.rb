@@ -41,7 +41,7 @@ end
 
     private
 
-    def artist_params
-      params.require(:user).permit(:username, :password, :avatar, :bio)
+    def user_params
+      params.require(:user).permit(:username, :password, :avatar, :bio, :favorite )
     end
 end

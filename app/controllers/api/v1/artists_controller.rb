@@ -1,4 +1,5 @@
 class Api::V1::ArtistsController < ApplicationController
+
 def create
   @artist = Artist.find_or_create_by(name: artist_params[:name])
   @artist.update(image_url: artist_params[:image_url])
